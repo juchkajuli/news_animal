@@ -46,7 +46,6 @@ background-color: #6ACCCB;
     position: relative;
 }
 .name-logo {
-    position: absolute;
     margin-left: 7%;
     font-family:'Pacifico', cursive;
     font-size: 32px;
@@ -399,6 +398,7 @@ margin-left: -120px;
 /* Header*/
 .header {
     width: 95%;
+    justify-content:
 }
 .name-logo {
     margin-left: 0;
@@ -438,9 +438,6 @@ margin-left: -120px;
  .right_block {
 margin-left: 65%;
 width: 250px;
- }
- .word-friend {
-    border-top: 2px solid #f3f3f3;
  }
  .list-friends, .recommend-block {
      background-color: inherit;
@@ -483,12 +480,18 @@ width: 250px;
 }
 .header {
     width: 100%;
+    justify-content: center;
 }
+.logo {
+ margin-left: -7%;
+ 
+ .name-logo {
+margin-left: 3%;
 .search {
     margin-left: 5%;
 }
 .menu-icon {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 .head-public, .publication, .publication_2, .publication-3, .comment, .comment-box, #content-head {
     max-width: 100%;
@@ -499,10 +502,13 @@ width: 250px;
 .right_block {
     margin-left: 63%;
 }
+.img-user-recom {
+ margin-bottom: 2%;
 .list-friends, .recommend-block {
     background-color: inherit;
     border-bottom: 2px solid #f3f3f3;
     margin-bottom: 10%;
+    border-top: 2px solid #f3f3f3;
 }
 .menu-list {
     margin-right: 20%;
@@ -512,9 +518,11 @@ width: 250px;
     margin-bottom: 8%;
 }
 .word-recommend, .word-friend {
-    width: 75px;
-    margin: 5%;
+    width: 95%;
+    margin: 2%;
 }
+.word-recommend {
+ margin: 0;
 
 }
 @media (max-width: 720px) {
@@ -574,10 +582,14 @@ margin: auto;
 /* Header */
 .name-logo {
 font-size: 24px;
+margin-left: -10%;
+margin-right: 2%;
 }
 .menu-icon {
     margin-left: 25%;
 }
+.img-menu-head {
+    width: 23px;
 .header__cont {
     max-width: 100%;
     margin: 0;
