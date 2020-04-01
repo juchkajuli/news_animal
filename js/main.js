@@ -1,24 +1,4 @@
 
-
-
-var like_button = new Vue ({
-    el: '#like_button', 
-    data: {
-        counter: 0
-    }
-});
-
-Vue.component('button-counter', {
-    data: function () {
-        return {
-            count: 0
-        };
-    },
-    template: '<button v-on:click="count++">  <img src="img/like.svg" class="like-img" > <p class="p-count"> {{ count }} </p> </button>'
-});
-
-new Vue ({ el: '#components-demo' });
-
 Vue.component('header-component' , {
     data: function () {
         return {
