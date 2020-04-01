@@ -1,5 +1,5 @@
 
-Vue.component('header-component' , {
+Vue.component('header-component', {
     data: function () {
         return {
             title: "Named"
