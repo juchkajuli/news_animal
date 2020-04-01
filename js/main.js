@@ -5,7 +5,7 @@ Vue.component('header-component', {
             title: "Named"
         };
     },
-    template: '<div class="header__cont"><div class="header"><img src="img/cat.svg" alt="Логотип" class="logo"><span class="name-logo">Photobook</span><input class="search" type="text" autocapitalize="none" autocapitalize="none" placeholder="Поиск" value=""><nav class="menu-list"><a href="#" class="menu-icon"><img src="img/домикк.svg" alt="home" class="img-menu-head"><a href="#" class="menu-icon"><img src="img/письмо.svg" alt="message" class="img-menu-head"></a><a href="#" class="menu-icon"><img src="img/сердце.svg" alt="interes" class="img-menu-head"></a><a href="#" class="menu-icon"><img src="img/avatar1.svg" alt="avatar" class="img-menu-head"></a></nav></div></div>'
+    template: '<div class="header__cont"><div class="header"><img src="img/cat.svg" alt="Логотип" class="logo"><span class="name-logo">Photobook</span><input class="search" type="text" autocapitalize="none" autocapitalize="none" placeholder="Поиск" value=""><div class="nav_menu_head><nav class="menu-list"><a href="#" class="menu-icon"><img src="img/домикк.svg" alt="home" class="img-menu-head"><a href="#" class="menu-icon"><img src="img/письмо.svg" alt="message" class="img-menu-head"></a><a href="#" class="menu-icon"><img src="img/сердце.svg" alt="interes" class="img-menu-head"></a><a href="#" class="menu-icon"><img src="img/avatar1.svg" alt="avatar" class="img-menu-head"></a></nav></div></div></div>'
 });
 new Vue ({ el: '#header-demo'});
 
@@ -51,17 +51,8 @@ Vue.component('recom__link', {
               title: ''
         };
     },
-         template: '<div class="recommend-link"><a href="#" class="user-link"> <img src="img/avatar1.svg" alt="Аватар" class="user-avatar"></a><a href="#" class="name-recommend"> Имя пользователя </a></div>'
+         template: '<div class="recommend-link"><a href="#" class="user-link"> <img src="img/avatar1.svg" alt="Аватар" class="user-avatar"></a><a href="#" class="name-recommend"> Имя пользователя </a> <button class="recommend-button" type="button">Подписаться</button></div>'
 });
-
-Vue.component('button___link', {
-    data: function() {
-        return{
-            title:''
-        };
-    },
-    template:'<div class="button-recommend"><button class="recommend-button" type="button">Подписаться</button></div>'
-}); 
 new Vue ({ el: '#recom_component'});
 
 Vue.component('mainContent', {
